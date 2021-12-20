@@ -1,0 +1,19 @@
+<script>
+    var line ="";
+    var rows = 60;
+    var spaces= rows - 1;
+
+    for (var a =0; a<rows; a++){
+        // loop for rows
+        for(var i = 0; i < spaces; i++){
+            // loops for spaces
+            line += " ";
+        }
+        for (var b = 0; b < a+1; b++){
+            line += "* ";
+        }
+        console.log(line);
+        line = "";
+        spaces -= 1;
+    }
+</script>
